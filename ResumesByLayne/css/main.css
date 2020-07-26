@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(/images/sunset-mountain_JHPY0LIBLY.jpg) left/ cover no-repeat;
+    font-family: 'Lora', serif;
+    display: flex;
+    
+    
+    
+}
+
+#left-panel {
+     background-color: rgba(96, 89, 97, 0.377);
+   /*background-color: rgba(179, 64, 11, 0.582);*/
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    color: rgb(248, 248, 248);
+    font-size: medium;
+    grid-area: left-panel;
+    
+    
+}
+
+
+nav{
+    flex-grow: 1;
+}
+
+#right-panel{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 70%;
+    
+}
+
+#resumes-by-layne{
+    grid-area: title;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300, bold;
+    text-transform: uppercase;
+    font-size: xxx-large;
+   
+}
+
+h1{
+    color: rgb(248, 248, 248);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: xx-large;
+    margin: 20px;
+
+}
+
+h2{
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 20px 0 20px;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: x-large;
+    border-bottom: 1px solid #707070;
+    padding-top: 30px
+  }
+  
+  nav a,
+  nav a:visited {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+  }
+  
+  nav a:hover {
+    color: #F2CC65;
+    padding-left: 5px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  footer{
+      display: flex;
+      flex-direction: row;
+  }
+
+  @media(max-width: 1024px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title" 
+        "left-panel";
+
+        background: url(/images/sunset-mountain_JHPY0LIBLY.jpg) right/ cover no-repeat;
+    }
+    #left-panel{
+        width: 100%;
+    }
+
+  }
+
+  @media(max-width: 425px) {
+      body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "title" 
+        "left-panel";
+
+        background: url(/images/sunset-mountain_JHPY0LIBLY.jpg) right/ cover no-repeat;
+      }
+      #left-panel{
+          width: 100%;
+      }
+  }
+  
